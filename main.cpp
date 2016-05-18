@@ -1,65 +1,22 @@
-#include <iostream>
-#include <stdlib.h>
-
-using namespace std;
-
-
-
 int main()
 {
-    //DECLARAÇÃO DO TIPO DE PROPOSIÇÃO
-    bool P1 = true;
-    bool P2 = true;
-    bool P3 = true;
-    bool P4 = true;
-    bool P5 = true;
-    bool P6 = true;
+//====================================================================================================================================
+    //DECLARAÃ‡AO DE VARIAVEIS
 
-    //EXTERNAS
-    bool QA;
-    bool QB;
+    const int L = 64, C = 6;
+    bool P[L][C];
 
+//===================================================================================================================================
 
-    //EXPRESSÃO
+    for(int i = 0; i < L; i++){
 
-    //Primeiro () - topo
-    if (P1){
-        if(P2 || P3){
-            QA = true;
+        for(int j = 0; j < C; j++){
+
+            if(j == 5){
+                if(i % 2 == 0)
+
+            }
+
         }
-        else{
-            QA = false;
-        }
+
     }
-    else{
-        if(P3 || P4){
-            QA = true;
-        }
-        else{
-            QA = false;
-        }
-    }
-
-    //Segundo () --> Após IFF
-    if(P3){
-        //NEGAR P6 - IF'S EXPLÍCITOS
-        if(P6 == true){
-            P6 = false;
-        }
-        if(P6 == false){
-            P6 = true;
-        }
-    }
-    else{
-        if(P4){
-
-        }
-    }
-
-
-
-
-
-
-    return 0;
-}
